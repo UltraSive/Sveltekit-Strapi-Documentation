@@ -1,3 +1,12 @@
+<script lang="ts">
+	import type { PageData } from './$types';
+	import PageMetaData from '/src/components/PageData.svelte';
+
+	export let data: PageData;
+
+	$: link = data.link.attributes;
+</script>
+
 <article class="">
 	<header class="">
 		<p class="text-base font-medium text-primary-500">Getting started</p>

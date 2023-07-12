@@ -24,10 +24,6 @@
 	});
 </script>
 
-<svelte:head>
-	<!-- <link rel="stylesheet" href="/src/lib/css/markdown.css" /> -->
-</svelte:head>
-
 {addContent(content)}
 
 <article class="markdown-body">

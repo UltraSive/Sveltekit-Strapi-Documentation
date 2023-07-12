@@ -1,8 +1,14 @@
+<script>
+	import { PUBLIC_NAME } from '$env/static/public';
+</script>
+
 <header
 	class="sticky top-0 z-50 flex items-center justify-between px-3 py-2 border-b shadow-lg bg-white/90 backdrop-blur-sm border-slate-400/40"
 >
 	<div class="flex items-center flex-grow basis-0">
-		<a href="/" class="text-lg font-semibold tracking-tight text-slate-900"> Anchored Hosting Documentation </a>
+		<a href="/" class="text-lg font-semibold tracking-tight text-slate-900">
+			{PUBLIC_NAME} Documentation
+		</a>
 	</div>
 
 	<form action="https://duckduckgo.com/" class="md:w-80 lg:w-96">

@@ -1,26 +1,18 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import Post from './Post.svelte';
+	import PageMetaData from '/src/components/PageData.svelte';
 
 	export let data: PageData;
 
 	$: post = data.post.attributes;
 </script>
 
-<title>{post.title}</title>
-<!-- Related Articles -- <link rel="canonical" href="" /> -->
-<!-- Embed Data -->
-<meta name="title" content={post.title} />
-<meta name="description" content={post.description} />
-<meta name="keywords" content={post.tags} />
-<!-- Open Graph -->
-<meta name="og:title" content={post.title} />
-<meta name="og:description" content={post.description} />
-<meta name="og:url" content="https://anchored.host/docs/{post.slug}" />
-<meta name="theme-color" data-react-helmet="true" content="#50C878" />
-<!-- Robots -->
-<meta name="robots" content="index, follow" />
-<!-- /Embed Data -->
+<PageMetaData
+	title="{post.title}"
+	description="{post.description}"
+	route="docs/{post.slug}"
+/>
 
 <article class="">
 	<header class="">
