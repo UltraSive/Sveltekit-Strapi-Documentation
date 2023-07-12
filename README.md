@@ -14,27 +14,13 @@ npm create svelte@latest
 npm create svelte@latest my-app
 ```
 
-## Developing
+# Dependancies needed to run if adding it to another project
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Install Prettier, ESLint, Typescript
 
-```bash
-npm run dev
+2. Setup project for [TailwindCSS SvelteKit](https://tailwindcss.com/docs/guides/sveltekit).
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+3. Additional packages.
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
+npm install axios
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-# Sveltekit-Strapi-Documentation
-# Sveltekit-Strapi-Documentation
