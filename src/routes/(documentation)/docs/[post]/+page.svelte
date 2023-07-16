@@ -1,18 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import Post from './Post.svelte';
-	import PageMetaData from '/src/components/PageData.svelte';
 
 	export let data: PageData;
 
 	$: post = data.post.attributes;
 </script>
-
-<PageMetaData
-	title="{post.title}"
-	description="{post.description}"
-	route="docs/{post.slug}"
-/>
 
 <article class="">
 	<header class="">
