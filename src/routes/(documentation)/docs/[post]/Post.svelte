@@ -4,7 +4,7 @@
 	import { onMount, afterUpdate } from 'svelte';
 
 	import MarkdownIt from 'markdown-it';
-	import hljs from 'highlight.js';
+	//import hljs from 'highlight.js';
 
 	export let post;
 
