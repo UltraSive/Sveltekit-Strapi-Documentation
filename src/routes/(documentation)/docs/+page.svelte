@@ -1,10 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
-	import PageMetaData from '/src/components/PageData.svelte';
 
 	export let data: PageData;
-
-	$: link = data.link.attributes;
 </script>
 
 <article class="">
@@ -44,53 +41,52 @@
 	<ul class="mt-4 grid grid-cols-1 gap-6 sm:grid-cols-2">
 		<li>
 			<a
-				href="https://my.anchored.host"
+				href="https://anchored.host"
 				class="block px-6 py-4 border rounded bg-slate-50 border-slate-100 hover:bg-white"
 			>
-				<h4 class="font-bold tracking-tight text-slate-900">Billing Portal</h4>
+				<h4 class="font-bold tracking-tight text-slate-900">Link</h4>
 
 				<p class="text-slate-600">
-					This is where you will purchase new services and manage your payments as well as create
-					tickets for support.
+					Link Description
 				</p>
 			</a>
 		</li>
 
 		<li>
 			<a
-				href="https://panel.anchored.host"
+				href="https://anchored.host"
 				class="block px-6 py-4 border rounded bg-slate-50 border-slate-100 hover:bg-white"
 			>
-				<h4 class="font-bold tracking-tight text-slate-900">Pterodactyl Game Panel</h4>
+				<h4 class="font-bold tracking-tight text-slate-900">Link</h4>
 
 				<p class="text-slate-600">
-					This is where you will manage your game servers your have purchased with us.
+					Link Description
 				</p>
 			</a>
 		</li>
 
-		<li class="">
+		<li>
 			<a
-				href="https://vm.anchored.host"
+				href="https://anchored.host"
 				class="block px-6 py-4 border rounded bg-slate-50 border-slate-100 hover:bg-white"
 			>
-				<h4 class="font-bold tracking-tight text-slate-900">Virtfusion VM Interface</h4>
+				<h4 class="font-bold tracking-tight text-slate-900">Link</h4>
 
 				<p class="text-slate-600">
-					This is where you can setup and modify your VPS servers you have with us.
+					Link Description
 				</p>
 			</a>
 		</li>
 
-		<li class="">
+		<li>
 			<a
-				href="https://discord.gg/4MA5TnPjsc"
+				href="https://anchored.host"
 				class="block px-6 py-4 border rounded bg-slate-50 border-slate-100 hover:bg-white"
 			>
-				<h4 class="font-bold tracking-tight text-slate-900">Discord</h4>
+				<h4 class="font-bold tracking-tight text-slate-900">Link</h4>
 
 				<p class="text-slate-600">
-					Need additional support or want to chat with the community our discord is the place to be!
+					Link Description
 				</p>
 			</a>
 		</li>

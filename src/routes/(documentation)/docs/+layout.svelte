@@ -6,18 +6,6 @@
 	const docs = data.docs.data;
 
 	const categories = ["Policies", "API", "Billing Portal", "Virtual Machine", "Rust", "Minecraft", "GMod"];
-	
-	function extractUniqueCategories(docs: Document[]): string[] {
-		const categories: string[] = [];
-
-		for (const doc of docs) {
-			if (!categories.includes(doc.attributes.category)) {
-				categories.push(doc.attributes.category);
-			}
-		}
-
-		return categories;
-	}
 </script>
 
 <main class="relative flex justify-center mx-auto max-w-8xl sm:px-2 lg:px-8 xl:px-12">
@@ -54,26 +42,6 @@
 						</li>
 					</ul>
 				</li>
-
-				<!-- Automatically load the catagories
-				{#each extractUniqueCategories(docs) as category}
-					<li>
-						<h3 class="font-semibold tracking-tight text-slate-900">{category}</h3>
-
-						<ul role="list" class="pl-3 mt-3 space-y-2">
-							{#each docs as doc}
-							{#if doc.attributes.category === category}
-							<li>
-								<a href="/docs/{doc.attributes.slug}" class="text-slate-600 hover:text-slate-800">
-									{doc.attributes.title}
-								</a>
-							</li>
-							{/if}
-							{/each}
-						</ul>
-					</li>
-				{/each}
-				-->
 				
 				{#each categories as category}
 				<li>
